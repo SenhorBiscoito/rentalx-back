@@ -8,5 +8,48 @@
       "name": "Senhor Biscoito",
       "url": "https://senhorbiscoito.com"
     }
+  },
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": ["Category"],
+        "summary": "Create a new category",
+        "description": "Create a new category",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "category name sample"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "category description sample"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "201": {
+          "description": "Created",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "500": {
+          "description": "Category already exists"
+        }
+      }
+    }
   }
 }
