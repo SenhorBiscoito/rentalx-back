@@ -32,4 +32,4 @@ class User {
   }
 }
 
-export {};
+export { User };
