@@ -1,8 +1,8 @@
 Arguments: 
-  /home/miranda/.nvm/versions/node/v16.15.1/bin/node /home/miranda/.nvm/versions/node/v16.15.1/bin/yarn typeorm
+  /home/miranda/.nvm/versions/node/v16.15.1/bin/node /home/miranda/.nvm/versions/node/v16.15.1/bin/yarn add tsringe
 
 PATH: 
-  /home/miranda/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/miranda/.zinit/polaris/bin:/home/miranda/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/miran/AppData/Roaming/npm:/mnt/c/Users/miran/.dotnet/tools
+  /home/miranda/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/miranda/.zinit/polaris/bin:/home/miranda/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/miran/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/miran/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/miran/AppData/Roaming/npm:/mnt/c/Users/miran/.dotnet/tools:/mnt/c/Users/miran/AppData/Local/Keybase/
 
 Yarn version: 
   1.22.18
@@ -14,12 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/miranda/WS/SenhorBiscoito/rentx/package.json: Unexpected token } in JSON at position 269
-      at JSON.parse (<anonymous>)
-      at /home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/tsringe: Not found
+      at Request.params.callback [as _callback] (/home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:66138:18)
+      at Request.self.callback (/home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/home/miranda/.nvm/versions/node/v16.15.1/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
@@ -29,7 +34,7 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-      "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
     },
     "dependencies": {
       "csv-parse": "^5.0.4",
