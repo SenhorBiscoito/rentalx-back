@@ -1,19 +1,18 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "RentalX Documentation",
+    "title": "RentX Documentation",
     "description": "This is an API Rent",
     "version": "1.0.0",
     "contact": {
-      "name": "Senhor Biscoito",
-      "url": "https://senhorbiscoito.com"
+      "email": "lucas@rocketseat.com.br"
     }
   },
   "paths": {
     "/categories": {
       "post": {
         "tags": ["Category"],
-        "summary": "Create a new category",
+        "summary": "Create a category",
         "description": "Create a new category",
         "requestBody": {
           "content": {
@@ -22,13 +21,15 @@
                 "type": "object",
                 "properties": {
                   "name": {
-                    "type": "string",
-                    "example": "category name sample"
+                    "type": "string"
                   },
                   "description": {
-                    "type": "string",
-                    "example": "category description sample"
+                    "type": "string"
                   }
+                },
+                "example": {
+                  "name": "Category name sample",
+                  "description": "Category description sample"
                 }
               }
             }
@@ -36,14 +37,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+            "description": "Created"
           },
           "500": {
             "description": "Category already exists"
@@ -54,7 +48,7 @@
         "tags": ["Category"],
         "summary": "List all categories",
         "description": "List all categories",
-        "response": {
+        "responses": {
           "200": {
             "description": "Success",
             "content": {
@@ -76,6 +70,70 @@
               }
             }
           }
+        }
+      }
+    },
+    "/categories/import": {
+      "post": {
+        "tags": ["Category"],
+        "summary": "Upload a new category",
+        "description": "Upload a new category",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/specifications": {
+      "post": {
+        "tags": ["Specifications"],
+        "summary": "Create a new specification",
+        "description": "Create a new specification",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Specification"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Specification already exists!"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Specification": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         }
       }
     }
