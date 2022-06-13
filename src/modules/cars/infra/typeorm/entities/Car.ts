@@ -4,6 +4,7 @@ import {
   Entity,
   PrimaryGeneratedColumn,
 } from "typeorm";
+import { v4 as uuidV4 } from "uuid";
 
 @Entity()
 class Car {
@@ -36,6 +37,14 @@ class Car {
 
   @CreateDateColumn()
   created_at: Date;
+
+  constructor() {
+    if (!this.id) {
+      this.id = uuidV4();
+      this.availability = true;
+      this.created_at = new Date();
+    }
+  }
 }
 
 export { Car };
