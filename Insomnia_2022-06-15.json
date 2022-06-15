@@ -1,0 +1,517 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-06-15T12:16:33.902Z",
+  "__export_source": "insomnia.desktop.app:v2022.4.0",
+  "resources": [
+    {
+      "_id": "req_a02b466861dc4c748b666f615600642a",
+      "parentId": "fld_ae7a964d3f974ccd9aa8c30371c536ce",
+      "modified": 1655295362256,
+      "created": 1655241277360,
+      "url": "{{ _.baseUrl }}/cars/images/58b40f32-8c0f-4928-84bb-f4a9ae784e7e",
+      "name": "Images",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_c9d15ed024dd44bfb1db816e7496b6b1",
+            "name": "images",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\miran\\Downloads\\quiz.jpg"
+          },
+          {
+            "id": "pair_5a001326fbc84c4a9405c4696b9f7c59",
+            "name": "images",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\miran\\Downloads\\lamborghini-huracan-Alexander-Migl-wikimedia-commons-960x540.jpg"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_1a86f471f0ad437eaca7431bb14b07b9"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_fb3e52d3a99841b483a8c5499857d3e1', 'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+      },
+      "metaSortKey": -1655241277360,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ae7a964d3f974ccd9aa8c30371c536ce",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1655129665108,
+      "created": 1655129665108,
+      "name": "Cars",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1655129665108,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "parentId": null,
+      "modified": 1644546778360,
+      "created": 1644546778360,
+      "name": "[Ignite]- Rentx",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_055faea7001e49b5998217077cbccc9d",
+      "parentId": "fld_ae7a964d3f974ccd9aa8c30371c536ce",
+      "modified": 1655241295239,
+      "created": 1655233706870,
+      "url": "{{ _.baseUrl }}/cars/specifications/58b40f32-8c0f-4928-84bb-f4a9ae784e7e",
+      "name": "Specifications",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"specifications_id\": [\"8f3ada1c-b6d8-4277-bccb-530aba0f6ed2\", \"6583624d-68e0-4e18-b291-0174a67c2006\"]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_10736b8df3e74751b9f00ed57e7dbd8f"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_fb3e52d3a99841b483a8c5499857d3e1', 'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+      },
+      "metaSortKey": -1655233706870,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9f69d19ec5ac46a49d29b55f935fc270",
+      "parentId": "fld_ae7a964d3f974ccd9aa8c30371c536ce",
+      "modified": 1655229685309,
+      "created": 1655218982675,
+      "url": "{{ _.baseUrl }}/cars/available",
+      "name": "Available",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_b4e8e4d1fc4140e6984f455d9dbf2dfd",
+          "name": "name",
+          "value": "Fusca",
+          "description": "",
+          "disabled": true
+        },
+        {
+          "id": "pair_66ea96c5828b4823a9a2b3cff4f0efb1",
+          "name": "category_id",
+          "value": "",
+          "description": "",
+          "disabled": true
+        },
+        {
+          "id": "pair_c60cf8c83c9c40febae326b248dc5203",
+          "name": "brand",
+          "value": "",
+          "description": "",
+          "disabled": true
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1655218982675,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5317fb9a18f24143be6960b18a5109d3",
+      "parentId": "fld_ae7a964d3f974ccd9aa8c30371c536ce",
+      "modified": 1655233873775,
+      "created": 1655129674013,
+      "url": "{{ _.baseUrl }}/cars",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Celta\",\n\t\"description\": \"Carro de luxo\",\n\t\"daily_rate\": 100,\n\t\"license_plate\": \"EFGH-1234\",\n\t\"fine_amount\": 10,\n\t\"brand\": \"VW\",\n\t\"category_id\": \"c8818545-e64d-4b07-b6c1-ef9c26c9a98c\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a38163d2f04e4ff0a50db63cd421f3c1"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_fb3e52d3a99841b483a8c5499857d3e1', 'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+      },
+      "metaSortKey": -1655129674013,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e829579fde93417eb1da00984fa272d0",
+      "parentId": "fld_68b0e1f219374720941f3d7ab789b3d6",
+      "modified": 1655148940707,
+      "created": 1654704729620,
+      "url": "{{ _.baseUrl }}/users/avatar",
+      "name": "Avatar",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_d382bfe7e3b04e14b6996337ebe52e6a",
+            "name": "avatar",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\miran\\Downloads\\dart.png"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_a1d3a2533ccd4bd5bc14fd1767626b98"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_fb3e52d3a99841b483a8c5499857d3e1', 'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+      },
+      "metaSortKey": -1654704729620,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_68b0e1f219374720941f3d7ab789b3d6",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1654635011943,
+      "created": 1654635011943,
+      "name": "Users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1654635011943,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_fb3e52d3a99841b483a8c5499857d3e1",
+      "parentId": "fld_68b0e1f219374720941f3d7ab789b3d6",
+      "modified": 1655233738652,
+      "created": 1654640135651,
+      "url": "{{ _.baseUrl }}/sessions",
+      "name": "Session",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"admin@rentx.com.br\",\n\t\"password\": \"admin\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0d4643fbfb9248209e60b6aa5de125e9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654640135651,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_29703a8ec09e4bd8be299ba561f82723",
+      "parentId": "fld_68b0e1f219374720941f3d7ab789b3d6",
+      "modified": 1655130110388,
+      "created": 1654635022330,
+      "url": "{{ _.baseUrl }}/users",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Jean\",\n\t\"username\": \"jean\",\n\t\"email\": \"senhorbiscoito1231@gmail.com\",\n\t\"password\": \"1234\",\n\t\"driver_license\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_60a7685cb48748de808a7acd09138cc6"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654635022330,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5d792a292c8a4c56b7961e741b21dab0",
+      "parentId": "fld_b6db6b3a143f4ec5a21ad1f3ef1b4e59",
+      "modified": 1655130395644,
+      "created": 1644546798038,
+      "url": "{{ _.baseUrl }}/specifications",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Cambio automatico3211\",\n\t\"description\": \"Carro com cambio automatico32'1\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ad9a38d2d68547e3bbae2514a1c40374"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTQ2NDE0NTksImV4cCI6MTY1NDcyNzg1OSwic3ViIjoiMmMxNjBkOWUtNjNmZS00NWMxLWE0ZWQtNTZhMzczNDk2MDU5In0.a3rAnEIt0Y6C4ljS7xSbd8-UIXIVOtuQB1ib7Onm2Uk"
+      },
+      "metaSortKey": -1644546798038,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b6db6b3a143f4ec5a21ad1f3ef1b4e59",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1644546787619,
+      "created": 1644546787619,
+      "name": "Specifications",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1644546787619,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_51893fe214544e02ad40d1cdcb8f9265",
+      "parentId": "fld_bb6afaedfe6249fb98e28e4ef73ff362",
+      "modified": 1654628645575,
+      "created": 1654474340130,
+      "url": "{{ _.baseUrl }}/categories/import",
+      "name": "import",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_609095b6777946d68e2d1e7006efa1d6",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "C:\\Users\\miran\\Downloads\\1615818549022-attachment.csv"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_b4308c249202468897071bbf5253c2d5"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1654474340130,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_bb6afaedfe6249fb98e28e4ef73ff362",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1644546806099,
+      "created": 1644546801994,
+      "name": "Categories",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1644546787569,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_dda99c4c43b6419a80b851ae80c3bab3",
+      "parentId": "fld_bb6afaedfe6249fb98e28e4ef73ff362",
+      "modified": 1644546997309,
+      "created": 1644546810514,
+      "url": "{{ _.baseUrl }}/categories",
+      "name": "List",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1644546810514,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ab678ecef11944b6bf0e0c255c098356",
+      "parentId": "fld_bb6afaedfe6249fb98e28e4ef73ff362",
+      "modified": 1655130398500,
+      "created": 1644546821523,
+      "url": "{{ _.baseUrl }}/categories",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Sedan\",\n\t\"description\": \"Categoria de SUV\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e19cb0c5f9364056978f7c0e2a86580f"
+        }
+      ],
+      "authentication": { "type": "bearer" },
+      "metaSortKey": -1644546810464,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_8babbf065c3f2092daa025281124f45dcdb5260b",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1644546874066,
+      "created": 1644546778366,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": {},
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1644546778366,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8babbf065c3f2092daa025281124f45dcdb5260b",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1644546778367,
+      "created": 1644546778367,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_53b0cf8d27f9437f9e9402f6ba043553",
+      "parentId": "wrk_6e837e7ef1b54c4f84710cb1d28fbf44",
+      "modified": 1644546778361,
+      "created": 1644546778361,
+      "fileName": "[Ignite]- Rentx",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_a95b68dbcb1041ee9a4224312f87e615",
+      "parentId": "env_8babbf065c3f2092daa025281124f45dcdb5260b",
+      "modified": 1654704801184,
+      "created": 1644546870490,
+      "name": "local",
+      "data": { "baseUrl": "localhost:3333" },
+      "dataPropertyOrder": { "&": ["baseUrl"] },
+      "color": "#7300ff",
+      "isPrivate": false,
+      "metaSortKey": 1644546870490,
+      "_type": "environment"
+    }
+  ]
+}
