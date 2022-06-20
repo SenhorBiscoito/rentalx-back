@@ -10,20 +10,23 @@
     "seed:admin": "ts-node-dev -r tsconfig-paths/register src/shared/infra/typeorm/seed/admin.ts"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.4",
     "bcryptjs": "^2.4.3",
     "csv-parse": "^5.0.4",
     "dayjs": "^1.11.3",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
+    "handlebars": "^4.7.7",
     "jsonwebtoken": "^8.5.1",
     "multer": "^1.4.4",
+    "nodemailer": "^6.7.5",
     "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
+    "supertest": "^6.2.3",
     "swagger-ui-express": "^4.3.0",
     "tsyringe": "^4.7.0",
     "typeorm": "0.2.45",
-    "uuid": "^8.3.2",
-    "supertest": "^6.2.3"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
