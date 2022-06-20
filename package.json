@@ -24,6 +24,7 @@
     "reflect-metadata": "^0.1.13",
     "supertest": "^6.2.3",
     "swagger-ui-express": "^4.3.0",
+    "ts-jest": "^28.0.4",
     "tsyringe": "^4.7.0",
     "typeorm": "0.2.45",
     "uuid": "^8.3.2"
@@ -48,7 +49,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
     "prettier": "^2.4.1",
-    "ts-jest": "^28.0.4",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^4.4.3"
